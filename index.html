@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Jewellery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-brand">Radiant</div>
+        <nav class="site-nav">
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="section-heading">Luxury Jewellery</p>
+                <h1>Timeless pieces crafted for every moment.</h1>
+                <p>Discover a curated collection of elegant necklaces, rings, and bracelets designed to shine day or night. Each piece is made with care and inspired by modern luxury.</p>
+                <button class="hero-action">Shop the new collection</button>
+            </div>
+            <div class="hero-image">
+                <img src="./img1.png" alt="Gold jewellery set">
+            </div>
+        </section>
+
+        <section class="products" id="collection">
+            <p class="section-heading">Featured Collection</p>
+            <div class="products-grid">
+                        <article class="product-card">
+                    <img src="./img1.png" alt="Signature ring">
+                    <div class="product-info">
+                        <h2 class="product-title">Signature Ring</h2>
+                        <div class="product-meta">
+                            <span>14k gold</span>
+                            <span class="product-price">$145</span>
+                        </div>
+                        <button class="book-button" data-item="Signature Ring">Enquire to Book</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="./img1.png" alt="Pearl pendant">
+                    <div class="product-info">
+                        <h2 class="product-title">Pearl Pendant</h2>
+                        <div class="product-meta">
+                            <span>Fine pearl</span>
+                            <span class="product-price">$198</span>
+                        </div>
+                        <button class="book-button" data-item="Pearl Pendant">Enquire to Book</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="./img1.png" alt="Diamond bracelet">
+                    <div class="product-info">
+                        <h2 class="product-title">Diamond Bracelet</h2>
+                        <div class="product-meta">
+                            <span>Luxury detail</span>
+                            <span class="product-price">$225</span>
+                        </div>
+                        <button class="book-button" data-item="Diamond Bracelet">Enquire to Book</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Radiant Jewellery &copy; 2026 · Crafted for your next unforgettable moment</p>
+    </footer>
+
+    <div class="chat-widget" id="chat-widget" aria-hidden="true">
+        <div class="chat-header">
+            <div>
+                <strong>Book with Radiant</strong>
+                <p>Ask about a specific item or call 9963392814</p>
+            </div>
+            <button class="chat-close" id="chat-close" aria-label="Close chat">×</button>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <form class="chat-footer" id="chat-form">
+            <input type="text" id="chat-input" placeholder="Enter item name or question" autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <button class="chat-button" id="chat-toggle">Chat to Book</button>
+    <script src="script.js"></script>
+</body>
+</html>
